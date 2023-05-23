@@ -1,0 +1,378 @@
+1. What are the two values of the Boolean data type? How do you write them?
+The words "true" and "false" are frequently used in programming languages to denote Boolean values. An illustration is: bool_variable = True.
+False another bool value
+
+In certain languages, Boolean values are expressed as numerical numbers, with 1 commonly denoting true and 0 denoting false. For instance:
+bool anotherBoolVariable = 0 and bool boolVariable = 1;
+
+The literals "true" and "false" are used as predicates in various languages, such JavaScript,the literals "true" and "false" are used directly as Boolean values. For example:
+var boolVariable = true;
+var anotherBoolVariable = false;
+
+It's important to note that Boolean values are not limited to these representations, and programming languages may have their own specific syntax or conventions for expressing Boolean values.
+
+2. What are the three different types of Boolean operators?
+The three different types of Boolean operators are:
+
+Logical AND (&&): The logical AND operator returns true if both operands are true otherwise, it returns false. It requires all the conditions to be true for the overall expression to be true.
+Here's an example:
+x = 5
+y = 10
+z = 3
+
+result = (x < y) and (y > z)
+The expression evaluates to True since both conditions are true.
+
+Logical OR (||): The logical OR operator returns true if at least one of the operands is true; otherwise, it returns false. It requires at least one condition to be true for the overall expression to be true.
+Here's an example:
+x = 5
+y = 10
+z = 3
+
+result = (x < y) or (y < z)
+The expression evaluates to True since the first condition is true.
+
+Logical NOT (!): The logical NOT operator is a unary operator that negates the value of the operand. It returns true if the operand is false, and false if the operand is true.
+Here's an example:
+x = 5
+y = 10
+
+result = not (x > y)
+The expression evaluates to True since the condition (x > y) is false.
+
+These Boolean operators can be used to combine Boolean values or expressions to create more complex conditions and control the flow of a program based on logical decisions.
+
+3. Make a list of each Boolean operator&#39;s truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+
+Logical AND (&&):
+
+| Operand 1 | Operand 2 | Result |
+|   false   |   false   | false  |
+|   false   |   true    | false  |
+|   true    |   false   | false  |
+|   true    |   true    | true   |
+
+Logical OR (||):
+
+| Operand 1 | Operand 2 | Result |
+|   false   |   false   | false  |
+|   false   |   true    | true   |
+|   true    |   false   | true   |
+|   true    |   true    | true   |
+
+Logical NOT (!):
+
+| Operand | Result |
+|  false  |  true  |
+|  true   | false  |
+
+These truth tables show the result of each Boolean operator for every possible combination of Boolean values.
+
+4. What are the values of the following expressions?
+(5 &gt; 4) and (3 == 5)
+not (5 &gt; 4)
+(5 &gt; 4) or (3 == 5)
+not ((5 &gt; 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+
+Determine the values of the following expressions: (3 == 5) and (5 > 4)
+
+(5 > 4) is an expression that evaluates to True.
+The result of the expression (3 == 5) is False.
+As a result, the expression as a whole evaluates to False.
+not (5 > 4)
+
+(5 > 4) is an expression that evaluates to True.
+The value is negated using the "not" operator, turning True into False.
+As a result, the expression as a whole evaluates to False.
+(5 > 4) or (3 == 5)
+
+(5 > 4) is an expression that evaluates to True.
+The result of the expression (3 == 5) is False.
+The expression as a whole hence evaluates to True.
+not ((5 > 4) or (3 == 5))
+
+(5 > 4) is an expression that evaluates to True.
+The result of the expression (3 == 5) is False.
+((5 > 4) or (3 == 5)) evaluates to True as a subexpression.
+The value is negated using the "not" operator, making True false.
+As a result, the expression as a whole evaluates to False.
+In addition to (True and True),
+
+(True and True) evaluates to True in the expression.
+(True == False) results in the value of False.
+As a result, the expression as a whole evaluates to False.
+not true or not false
+
+The expression evaluates to True (rather than False).
+The expression (not True) has a False evaluation.
+The expression as a whole hence evaluates to True.
+The expressions' values are as follows:
+
+False False True
+False False True
+
+
+5. What are the six comparison operators?
+
+The six comparison operators are:
+Equal to (==): This operator determines whether two operands are equal and outputs true or false depending on the result. 
+For instance:
+5 == 5 # Assesses as True
+5 == 6 # Result is False
+
+The not equal to (!=) operator determines whether two operands are not equal and returns true if they are and false otherwise.
+For instance:
+Five!=Five evaluates to False.
+5!=6 # equates to True
+
+Greater than (>): This operator determines whether the left operand is larger than the right operand, returning true if it is and false if it is not.
+For instance:
+5 > 4 # Identifies True
+5 > 6 # Identifies False
+
+Less than (): This operator determines whether the left operand is less than the right operand and returns true if it is, and false if it is not. 
+For instance:
+The evaluation of 5 4 is False.
+Five plus six evaluates to true.
+
+Greater than or equal to (>=): This operator determines whether the left operand is greater than or equal to the right operand, and if it is, it returns true; otherwise, it returns false.
+For instance:
+5 >= 4 # Identifies True
+5 >= 6 # Obtains a False evaluation
+5 >= 5 # Identifies True
+
+The less-than-or-equal-to operator (=) determines whether the left operand is less-than-or-equal-to the right operand and returns true if it is, else it returns false. 
+For instance:
+4 # Evaluates to False when 5 >= 4
+Five plus six evaluates to true.
+5 >= 5 # Identifies True
+
+In programming, these comparison operators are used to assess the relationship or hierarchy of values and expressions.
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+To differentiate between the equal to (==) operator and the assignment (=) operator, you can consider the following:
+
+Equal to (==) Operator:
+
+The equal to operator (==) is used for comparison.
+
+It compares two values to check if they are equal.
+
+It returns a Boolean value (true or false) based on the comparison result.
+
+The equal to operator is used in conditions, such as if statements or while loops, to make decisions based on equality.
+
+Example:
+x = 5
+y = 10
+
+if x == y:
+    print("x is equal to y")
+else:
+    print("x is not equal to y")
+    
+Assignment (=) Operator:
+
+The assignment operator (=) is used for assignment or storing values in variables.
+
+It assigns the value on the right-hand side to the variable on the left-hand side.
+
+It does not perform a comparison but rather updates the value of a variable.
+
+Example:
+x = 5  # Assigning the value 5 to variable x
+y = x  # Assigning the value of x to variable y
+
+In summary, the equal to (==) operator is used for comparison between two values, while the assignment (=) operator is used to assign a value to a variable. You would use the equal to operator in conditions to check for equality and make decisions based on the result. On the other hand, the assignment operator is used when you want to store a value in a variable or update its value.
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print(&#39;eggs&#39;)
+if spam &gt; 5:
+print(&#39;bacon&#39;)
+else:
+print(&#39;ham&#39;)
+print(&#39;spam&#39;)
+print(&#39;spam&#39;)
+
+Based on the indentation in the code, the three blocks can be identified as follows:
+
+Block 1:
+if spam == 10:
+    print('eggs')
+This block is an if statement with the condition spam == 10. If the condition is true, it will execute the indented code print('eggs'). However, since the value of spam is initially 0, this block will not be executed.
+
+Block 2:
+if spam > 5:
+    print('bacon')
+else:
+    print('ham')
+This block is another if statement. It checks the condition spam > 5. If the condition is true, it will execute print('bacon'). Otherwise, if the condition is false, it will execute print('ham'). Since the value of spam is 0, which is not greater than 5, the else block will be executed, and ham will be printed.
+
+Block 3:
+print('spam')
+print('spam')
+This block consists of two print statements, which will always execute regardless of the conditions in the previous if statements. It will print spam twice, each on a separate line.
+
+To summarize, the three identified blocks are:
+
+Block 1: The if statement with the condition spam == 10.
+Block 2: The if-else statement with the condition spam > 5.
+Block 3: The two print statements that always execute.
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+
+Here's the code that meets the given conditions:
+spam =  # Assume a value is stored in spam variable
+
+if spam == 1:
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
+In this code, the variable spam is checked against different values using if-elif-else statements. If spam is equal to 1, it will print "Hello". If spam is equal to 2, it will print "Howdy". And if spam contains any other value, it will print "Greetings!".
+
+9. if your programme is stuck in an endless loop, what keys you’ll press?
+If a program is stuck in an endless loop and you want to interrupt its execution, you can typically use one of the following key combinations:
+
+1.Ctrl + C: This key combination is commonly used to send an interrupt signal to the program. Pressing Ctrl and C simultaneously on the keyboard interrupts the execution of the program and typically terminates it. This is the most common and widely supported method across different platforms and operating systems.
+
+2.Ctrl + Break: On some systems or terminals, the key combination Ctrl and Break may be used instead of Ctrl and C to interrupt the program's execution.
+
+3.Ctrl + \ (backslash): This key combination is sometimes used as an alternative to Ctrl + C to send a quit signal to the program, terminating its execution.
+
+It's important to note that the effectiveness of these key combinations may depend on the environment or terminal you are using. In most cases, Ctrl + C should work to interrupt and terminate the program stuck in an endless loop.
+
+10. How can you tell the difference between the break and continue?
+The "break" and "continue" statements are used in control flow within loops in programming languages. They serve different purposes:
+
+"break" statement:
+
+When encountered within a loop, the "break" statement terminates the loop immediately, regardless of any remaining iterations.
+It allows you to exit the loop prematurely based on a specific condition or trigger.
+After encountering a "break" statement, the program execution continues with the code following the loop.
+Typically, "break" is used to exit a loop early when a certain condition is met.
+Example:
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+    
+In this example, when the value of "i" becomes 5, the "break" statement is encountered, and the loop is terminated. The output will be:
+1
+2
+3
+4
+
+"continue" statement:
+
+When encountered within a loop, the "continue" statement skips the remaining code within the loop for the current iteration and proceeds to the next iteration.
+It allows you to bypass the rest of the loop's code for a particular iteration without terminating the loop itself.
+The program execution jumps to the next iteration, and the loop continues with the next value or iteration.
+Typically, "continue" is used to skip certain iterations when a specific condition is met, and you want to proceed to the next iteration.
+Example:
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+    
+In this example, when the value of "i" is 3, the "continue" statement is encountered. It skips the remaining code for that iteration and proceeds to the next iteration.
+The output will be:
+1
+2
+4
+5
+
+The "break" statement is used to exit the loop entirely, while the "continue" statement is used to skip the remaining code for the current iteration and move on to the next iteration.
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+range(10): This form of the range function generates a sequence of numbers from 0 to 9 (10 numbers in total). It starts from the default initial value of 0 and increments by 1 for each subsequent number. The step size is implicitly set to 1.
+Example usage:
+for i in range(10):
+    print(i)
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+range(0, 10): This form of the range function specifies both the start and stop values explicitly. It generates a sequence of numbers from 0 to 9 (10 numbers in total). Similar to range(10), the step size is implicitly set to 1.
+Example usage:
+for i in range(0, 10):
+    print(i)
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+range(0, 10, 1): This form of the range function includes both the start, stop, and step values. It generates a sequence of numbers starting from 0 and ending at 9 (10 numbers in total), with a step size of 1.
+Example usage:
+for i in range(0, 10, 1):
+    print(i)
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+All three forms generate the same sequence of numbers from 0 to 9, but they provide different ways of specifying the start, stop, and step values.
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+Here's a short program that prints the numbers 1 to 10 using a for loop:
+#Using a for loop
+for i in range(1, 11):
+    print(i)
+    
+And here's the equivalent program that prints the numbers 1 to 10 using a while loop:
+#Using a while loop
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+Both programs will produce the same output, printing the numbers 1 to 10:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+In the for loop version, the range(1, 11) generates a sequence of numbers from 1 to 10, and the loop iterates over each number, printing it.
+
+In the while loop version, a variable i is initially set to 1, and the loop continues as long as i is less than or equal to 10. Within the loop, i is printed, and then it is incremented by 1 (i += 1) to move to the next number. The loop repeats until i reaches 11, at which point the condition becomes false and the loop terminates.
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+You can use the following syntax to invoke the "bacon()" function after importing the "spam" module, which contains it:
+import junk
+
+spam.bacon()
+
+In this instance, "spam" is the function name and "bacon" is the name of the module. You can access and call the function by prefixing the function name with the module name and a dot.
+
+
+
+
+
